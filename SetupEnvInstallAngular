@@ -1,0 +1,11 @@
+Setup Environment & Install Angular 19
+
+1. Imstall NodeJS.
+https://nodejs.org/en
+
+Install Angular Cli
+
+$ npm install -g @angulat/cli // install latest version
+
+Create project
+$ ng new <projectName>
