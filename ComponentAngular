@@ -1,0 +1,59 @@
+What is Component Angular 19 Tutorial Part 2
+
+What is Component?
+
+How to create a component.
+      ng generate component <name>
+
+What is Component Decorator?
+
+How to Render Component.
+
+app component has three files:
+app.component.css
+app.component.html
+app.component.ts
+
+in folder src/ create another folder named components/
+open terminal in folder components.
+use angularCli to create a component.
+in prompt write ng gennerate component <name>
+in this examle: ng generate component user
+and what happend?
+four files was created.
+now will be create another component "admin"
+ng g c admin    # g c short from generate component
+ how to run a project?
+$ ng serve
+
+how to render component
+
+go to src/app/app.component.html
+
+<h1> Angular 19 </h1>
+<p>This is Para </h1>
+<app-admin></app-admin>
+<app-user></app-user>
+
+
+how impot a component in main component AppComponent?
+
+
+go to -> src/app/app.component.ts
+@Component ({
+  selector 'app-root',
+  imports: [RouterOutlet, AdminComponent, UserComponent]
+
+
+how to create single fuile component?
+
+import { Component } from '@angular/core'
+
+@Component ({
+    selector: 'app-user',
+    imports: [],
+    template: "<h1 class='text-welcome'>Hi from user page</h1>",
+    styles: ['.text-danger {color:blue}']
+})
+
+
